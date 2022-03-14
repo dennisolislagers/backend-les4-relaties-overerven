@@ -24,6 +24,20 @@ public class MainCar {
 
      */
     public static void main(String[] args) {
+// We spreken de variabelen aan:
+        Car audi = new Car("H-844-GD", "Audi", "A3", 100000);
+        Car VW = new Car("02-KPG-8", "Volkswagen", "Polo", 56345);
 
+        CarOwner Dennis = new CarOwner("Dennis", "Olislagers", 49);
+        CarOwner Iris = new CarOwner("Iris", "Ummels", 44);
+
+        CarDealer Wealer = new CarDealer("Wealer", "Fregatweg 24", 23);
+        CarDealer Janssen = new CarDealer("Janssen", "Hoogweg 65", 45);
+
+        Janssen.addCar(audi);
+        Wealer.addCar(VW);
+
+        Janssen.transferCarToOwner(audi, Dennis);
+        Wealer.transferCarToOwner(VW, Iris);
     }
 }

@@ -5,9 +5,29 @@ public abstract class Animal {
 //      Daarom zijn ze private.
     private String name;
     private String gender;
+//      We maken de constructor aan.
+    public Animal(String name, String gender){
+        this.name = name;
+        this.gender = gender;
+    }
+//      We maken de getters en de setters.
+//      De getters.
+    public String getName(){
+        return name;
+    }
+    public String getGender(){
+        return gender;
+    }
+//      De setters.
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setGender(String gender){
+        this.gender = gender;
+    }
 //      We gaan uit van de wilde dieren, deze zijn in de meerderheid, de methodes moeten wel overschreven kunnen worden.
     public void move() {
-        System.out.println("Ik ben een halve meter verder gaan slapen!!");
+        System.out.println("Ik ben een halve meter gaan lopen!!");
     }
 //      De volgende methode is voor elk dier hetzelfde, maar kan eventueel in de toekomst worden overschreven.
     public void sleep(){

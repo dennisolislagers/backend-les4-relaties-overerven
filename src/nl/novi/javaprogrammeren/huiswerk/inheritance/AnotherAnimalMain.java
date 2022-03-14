@@ -4,35 +4,35 @@ public class AnotherAnimalMain {
 
     public static void main(String[] args) {
 //        Elk object gaat straks iets doen vanuit de methode van de subklasse.
-        Lion lion = new Lion();
+        Lion lion = new Lion("King", "male", "Hills", "Woensdag", "Afrika", 4);
         lion.sound();
         lion.sleep();
         lion.move();
-        lion.eat();
 
-        Tiger tiger = new Tiger();
+
+        Tiger tiger = new Tiger("Pluisje", "female", "Hills", "Donderdag", "Azie", 24);
         tiger.sound();
         tiger.sleep();
         tiger.move();
-        tiger.eat();
 
-        Wolf wolf = new Wolf();
+
+        Wolf wolf = new Wolf("Boris", "male", "Forest", "Vrijdag", "Europa", "Oosten-roedel");
         wolf.sound();
         wolf.sleep();
         wolf.move();
-        wolf.eat();
 
-        Cat cat = new Cat();
+
+        Cat cat = new Cat("Poesje", "female", "Hendrik", "Kittekat", "Zilverrugkat", true);
         cat.sound();
         cat.sleep();
         cat.move();
-        cat.eat();
 
-        Dog dog = new Dog();
+
+        Dog dog = new Dog("Sjuul", "male", "Dennis", "Frikandel", "Golden Retriever");
         dog.sound();
         dog.sleep();
         dog.move();
-        dog.eat();
+
 
     }
 
